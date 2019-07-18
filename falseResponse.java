@@ -12,7 +12,8 @@ public class falseResponse implements EventHandler<ActionEvent> {
 	public void handle(ActionEvent event) {
 		// TODO Auto-generated method stub
 		try {
-			FileWriter write=new FileWriter("userAnswer.txt");
+			File file=new File("userAnswer.txt")
+			FileWriter write=new FileWriter(file);
 			write.write("False \n t");
 			write.close();
 		} catch (IOException e) {
