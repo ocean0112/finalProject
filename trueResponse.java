@@ -10,7 +10,8 @@ public class trueResponse implements EventHandler<ActionEvent> {
 	@Override
 	public void handle(ActionEvent event) {
 		try {
-			FileWriter write=new FileWriter("userAnswer.txt");
+			File file=new File("userAnswers.txt");
+			FileWriter write=new FileWriter(file);
 			write.write("True \n f");
 			write.close();
 		} catch (IOException e) {
