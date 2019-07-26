@@ -31,9 +31,6 @@ public static String[] userAns=new String[10];
 	    fb.setToggleGroup(group1);
 		HBox tAnswer=new HBox(tb);
 		HBox fAnswer=new HBox(fb);
-
-		
-	
 	//q2
 		Label q2=new Label("2) ");
 		HBox questionBox2=new HBox(q2);
@@ -46,7 +43,6 @@ public static String[] userAns=new String[10];
 	    fb2.setToggleGroup(group2);
 		HBox tAnswer2=new HBox(tb);
 		HBox fAnswer2=new HBox(fb);
-		
 	//q3
 		Label q3=new Label("3) ");
 		HBox questionBox3=new HBox(q3);
@@ -59,7 +55,6 @@ public static String[] userAns=new String[10];
 	    fb3.setToggleGroup(group3);
 		HBox tAnswer3=new HBox(tb3);
 		HBox fAnswer3=new HBox(fb3);
-
 	//q4
 		Label q4=new Label("4) ");
 		HBox questionBox4=new HBox(q4);
@@ -72,7 +67,6 @@ public static String[] userAns=new String[10];
 	    fb4.setToggleGroup(group4);
 		HBox tAnswer4=new HBox(tb4);
 		HBox fAnswer4=new HBox(fb4);
-		
 	//q5	
 		Label q5=new Label("5) ");
 		HBox questionBox5=new HBox(q5);
@@ -85,7 +79,6 @@ public static String[] userAns=new String[10];
 	    fb5.setToggleGroup(group5);
 		HBox tAnswer5=new HBox(tb5);
 		HBox fAnswer5=new HBox(fb5);
-		
 	//q6
 		Label q6=new Label("6) ");
 		HBox questionBox6=new HBox(q6);
@@ -109,8 +102,7 @@ public static String[] userAns=new String[10];
 	    RadioButton fb7 = new RadioButton("False");
 	    fb7.setToggleGroup(group7);
 		HBox tAnswer7=new HBox(tb7);
-		HBox fAnswer7=new HBox(fb7);
-		
+		HBox fAnswer7=new HBox(fb7);	
 	//q8
 		Label q8=new Label("8) ");
 		HBox questionBox8=new HBox(q8);
@@ -122,8 +114,7 @@ public static String[] userAns=new String[10];
 	    RadioButton fb8 = new RadioButton("False");
 	    fb8.setToggleGroup(group8);
 		HBox tAnswer8=new HBox(tb8);
-		HBox fAnswer8=new HBox(fb8);
-		
+		HBox fAnswer8=new HBox(fb8);	
 	//q9
 		Label q9=new Label("9) ");
 		HBox questionBox9=new HBox(q9);
