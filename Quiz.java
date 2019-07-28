@@ -12,14 +12,15 @@ import javafx.scene.layout.HBox;
 public class Quiz extends Application {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		launch(args);
 	}
-public static String[] userAns=new String[10];
+
 	@Override
 	public void start(Stage primaryStage) {
-	//q1
+		String[] userAns=new String[10];
+		
+		//q1
 		Label q=new Label("1) ");
 		HBox questionBox=new HBox(q);
 		 
@@ -29,7 +30,15 @@ public static String[] userAns=new String[10];
 	    tb.setSelected(true);
 	    RadioButton fb = new RadioButton("False");
 	    fb.setToggleGroup(group1);
-		HBox tAnswer=new HBox(tb);
+	   
+	    tb.setOnAction(event -> {
+			userAns[0]="True";
+		});
+		fb.setOnAction(event -> {
+			userAns[0]="False";
+		});
+		
+	    HBox tAnswer=new HBox(tb);
 		HBox fAnswer=new HBox(fb);
 	//q2
 		Label q2=new Label("2) ");
@@ -41,6 +50,14 @@ public static String[] userAns=new String[10];
 	    tb2.setSelected(true);
 	    RadioButton fb2 = new RadioButton("False");
 	    fb2.setToggleGroup(group2);
+		
+	    tb2.setOnAction(event -> {
+			userAns[1]="True";
+		});
+		fb2.setOnAction(event -> {
+			userAns[1]="False";
+		});
+	   
 		HBox tAnswer2=new HBox(tb);
 		HBox fAnswer2=new HBox(fb);
 	//q3
@@ -53,7 +70,15 @@ public static String[] userAns=new String[10];
 	    tb3.setSelected(true);
 	    RadioButton fb3 = new RadioButton("False");
 	    fb3.setToggleGroup(group3);
-		HBox tAnswer3=new HBox(tb3);
+	   
+	    tb3.setOnAction(event -> {
+			userAns[2]="True";
+		});
+		fb3.setOnAction(event -> {
+			userAns[2]="False";
+		});
+		
+	    HBox tAnswer3=new HBox(tb3);
 		HBox fAnswer3=new HBox(fb3);
 	//q4
 		Label q4=new Label("4) ");
@@ -65,7 +90,15 @@ public static String[] userAns=new String[10];
 	    tb4.setSelected(true);
 	    RadioButton fb4 = new RadioButton("False");
 	    fb4.setToggleGroup(group4);
-		HBox tAnswer4=new HBox(tb4);
+	    
+	    tb4.setOnAction(event -> {
+			userAns[3]="True";
+		});
+		fb4.setOnAction(event -> {
+			userAns[3]="False";
+		});
+		
+	    HBox tAnswer4=new HBox(tb4);
 		HBox fAnswer4=new HBox(fb4);
 	//q5	
 		Label q5=new Label("5) ");
@@ -77,7 +110,15 @@ public static String[] userAns=new String[10];
 	    tb5.setSelected(true);
 	    RadioButton fb5 = new RadioButton("False");
 	    fb5.setToggleGroup(group5);
-		HBox tAnswer5=new HBox(tb5);
+	    
+	    tb5.setOnAction(event -> {
+			userAns[4]="True";
+		});
+		fb5.setOnAction(event -> {
+			userAns[4]="False";
+		});
+		
+	    HBox tAnswer5=new HBox(tb5);
 		HBox fAnswer5=new HBox(fb5);
 	//q6
 		Label q6=new Label("6) ");
@@ -89,7 +130,15 @@ public static String[] userAns=new String[10];
 	    tb6.setSelected(true);
 	    RadioButton fb6 = new RadioButton("False");
 	    fb6.setToggleGroup(group6);
-		HBox tAnswer6=new HBox(tb6);
+	    
+	    tb6.setOnAction(event -> {
+			userAns[5]="True";
+		});
+		fb6.setOnAction(event -> {
+			userAns[5]="False";
+		});
+		
+	    HBox tAnswer6=new HBox(tb6);
 		HBox fAnswer6=new HBox(fb6);
 	//q7
 		Label q7=new Label("7) ");
@@ -101,7 +150,15 @@ public static String[] userAns=new String[10];
 	    tb7.setSelected(true);
 	    RadioButton fb7 = new RadioButton("False");
 	    fb7.setToggleGroup(group7);
-		HBox tAnswer7=new HBox(tb7);
+	    
+	    tb7.setOnAction(event -> {
+			userAns[6]="True";
+		});
+		fb7.setOnAction(event -> {
+			userAns[6]="False";
+		});
+		
+	    HBox tAnswer7=new HBox(tb7);
 		HBox fAnswer7=new HBox(fb7);	
 	//q8
 		Label q8=new Label("8) ");
@@ -113,7 +170,15 @@ public static String[] userAns=new String[10];
 	    tb8.setSelected(true);
 	    RadioButton fb8 = new RadioButton("False");
 	    fb8.setToggleGroup(group8);
-		HBox tAnswer8=new HBox(tb8);
+		
+	    tb8.setOnAction(event -> {
+			userAns[7]="True";
+		});
+		fb8.setOnAction(event -> {
+			userAns[7]="False";
+		});
+		
+	    HBox tAnswer8=new HBox(tb8);
 		HBox fAnswer8=new HBox(fb8);	
 	//q9
 		Label q9=new Label("9) ");
@@ -125,6 +190,14 @@ public static String[] userAns=new String[10];
 	    tb9.setSelected(true);
 	    RadioButton fb9 = new RadioButton("False");
 	    fb9.setToggleGroup(group9);
+	    
+	    tb9.setOnAction(event -> {
+			userAns[8]="True";
+		});
+		fb9.setOnAction(event -> {
+			userAns[8]="False";
+		});
+		
 		HBox tAnswer9=new HBox(tb9);
 		HBox fAnswer9=new HBox(fb9);
 	//q10
@@ -140,14 +213,28 @@ public static String[] userAns=new String[10];
 	    c.setToggleGroup(group10);
 	    RadioButton d = new RadioButton("D");
 	    d.setToggleGroup(group10);
+	    
+	    a.setOnAction(event -> {
+			userAns[9]="a";
+		});
+		b.setOnAction(event -> {
+			userAns[9]="b";
+		});
+		c.setOnAction(event -> {
+			userAns[9]="c";
+		});
+		d.setOnAction(event -> {
+			userAns[9]="d";
+		});
+		
 	    HBox abox=new HBox(a);
 	    HBox bbox=new HBox(b);
 	    HBox cbox=new HBox(c);
 	    HBox dbox=new HBox(d);
 	//submit
-		Label submit=new Label("Submit");
-		Button sub=new Button();
-
+		Label submit=new Label();
+		Button sub=new Button("Submit");
+		sub.setOnAction(new submitbutton(userAns));
 		HBox subs=new HBox(submit,sub);
 
 		// parent node
